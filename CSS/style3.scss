@@ -1,0 +1,829 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap');
+
+.content-container {
+    width: 1200px;
+    // height: 100%;
+    // background: rgb(163, 105, 105);
+    
+}
+
+.main-screen {
+
+    width: 100%;
+    height: 100vh;
+    // background: url(../IMG/Frame/main_3.jpg);
+
+
+    // background: url(../IMG/solo_casa.svg);
+    // background-repeat: no-repeat;
+    // // background-size: calc(100% - 1px) auto;
+    // background-size: cover;
+    // background-position: center 10%;
+    
+    // background: #bdc3c7;  /* fallback for old browsers */
+    // background: -webkit-linear-gradient(to top, #56789b, white);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(180deg, white, #FFEFBA); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-position: bottom;
+    // background-size: 200% 200%;
+
+    // animation: gradient 10s ease infinite;
+
+    // animation: color-shift 5s ease infinite;
+
+    overflow: hidden;
+    
+    .main-screen-wrap {
+
+        // background: linear-gradient(rgba(79, 79, 245, 0.4), rgba(255, 255, 255, 0));
+        // clip-path: polygon(0% 44.38%, 6.75% 44.38%, 33.24% 4.17%, 68.63% 29.74%, 83.39% 44.38%, 99.87% 44.38%, 99.86% 99.72%, 0% 99.72%);        
+                
+
+        .header {
+            width: 100%;
+            height: 10vh;
+            // background: rgba(255, 255, 255, 0.3);
+            // opacity: 50%;
+            display: flex;
+            justify-content: center;
+
+            .content-container {
+
+                display: flex;
+                // background: red;
+
+                .left {
+                    width: 50%;
+                    height: 100%;
+                    // background: blue;
+
+                    .logo {
+                        width: 25%;
+                        height: 10vh;
+                        background: url(../IMG/LogoBlack.svg);
+                        background-repeat: no-repeat;
+                        background-size: contain;
+
+                        filter: drop-shadow(5px 5px 50px white);
+                        
+                    }
+
+                }
+
+                .right {
+                    width: 50%;
+                    height: 100%;
+                    // background: rgb(75, 211, 82);
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    z-index: 1;
+                    
+
+                    a {
+                        text-decoration: none;
+                        // color: rgb(255, 255, 255);
+                        // color: black;
+                        color: rgb(27, 14, 143);
+                        
+                        font-family: "Montserrat", sans-serif;
+                        font-optical-sizing: auto;
+                        font-weight: 200;
+                        font-style: bold;
+                                                
+                    }
+                    
+                    a:hover {
+                        color: gold;
+                    }
+                }
+            }
+            
+
+        }
+
+
+        .main {
+
+            width: 100%;
+            height: 90vh;
+            // background: yellow;
+            display: flex;
+            justify-content: center;
+
+            .content-container {
+                background: none;
+                display: flex;
+                // justify-content: left;
+                align-items: center;
+                // position: relative;
+
+                .text {
+                    // margin-top: 0.2rem;
+                    // position: absolute;
+                    width: 40%;
+                    // right: 0;
+                    // top: 0;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 3rem;
+                    align-items: right;
+                    justify-content: center;
+
+                    .text-itself {
+
+                    
+                        h1 {
+                            // color: rgb(255, 255, 255);
+                            // color: rgb(51, 50, 47);
+                            color: rgb(27, 14, 143);
+                            font-size: xxx-large;
+                            // position: relative;
+                            // z-index: 1;
+                            text-align: left;
+                            font-family: "Montserrat", sans-serif;
+                            font-optical-sizing: auto;
+                            font-weight: 600;
+                            font-style: normal;
+
+                            line-height: 145%;
+    
+                            // border: 5px solid rgb(255, 238, 0);
+                            border-radius: 10px;
+                            // background: linear-gradient(rgba(31, 31, 34, 0.3), rgba(255, 255, 255, 0));
+                            // background: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0));
+                            background: linear-gradient(45deg, #0b0357, #01f7ff); /* Градиент */
+                            -webkit-background-clip: text; /* Применение фона к тексту */
+                            -webkit-text-fill-color: transparent; 
+                        }
+                    }
+
+                    .btn {
+                        width: 180px;
+                        height: 30px;
+
+                        button {
+                            width: 180px;
+                            height: 30px;
+                            color: #024042;
+                        
+                            border: 2px solid #01f7ff;
+
+                            background: none;
+                        }
+
+                        button:hover {
+                            // background: rgb(255, 175, 3);
+                            background: gold;
+                            border: 2px solid gold;
+                            color: rgb(114, 105, 105);
+                            font-weight: 400;
+        
+                            
+                            
+                        }
+
+                    
+                    }
+                }    
+                .cornice {
+                    // margin-top: 70px;
+                    width: 60%;
+                    height: 100%;
+
+                    background: url(../IMG/solo_casa.svg);
+                    background-size: 135% auto;
+                    background-repeat: no-repeat;
+                    background-position: 30% center;
+                    // border: 8px solid rgb(255, 251, 0);
+                    // margin-left: 60%;
+                    // opacity: 60%;
+                    // position: absolute;
+                    
+                    filter: drop-shadow(5px 5px 70px #01f7ff);
+                }
+            }
+        }
+    }
+}
+
+@keyframes gradient {
+
+    0% {
+        background-position: 0% 0%;
+    }
+
+
+
+    50% {
+        background-position: 100% 100%;
+    }
+
+    100% {
+        background-position: 0% 0%;
+    }
+    
+}
+
+// @keyframes color-shift {
+//     0% {
+//         background-color: #56789b;
+//     }
+//     50% {
+//         background-color: white;
+//     }
+//     100% {
+//         background-color: #56789b;
+//     }
+// }
+
+// сколько высота блока - столько и марджин-боттом с минусовым значением
+
+// .features {
+//     width: 100%;
+//     height: 100px;
+//     position: relative;
+//     top: -82px;
+//     margin-bottom: -100px;
+//     background: gold;
+//     opacity: 50%;
+// }
+
+#about {
+    width: 100%;
+    height: 100vh;
+    // background: rgb(80, 185, 168);
+
+    overflow: hidden;
+
+    display: flex;
+    justify-content: center;
+
+    .content-container {
+        display: flex;
+        // justify-content: center;
+        align-items: center;
+        // background: red;
+        gap: 5%;
+
+        .about-left {
+            width: 50%;
+            height: 600px;
+            // background: yellow;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .img-container {
+                width: 100%;
+                height: 100%;
+                display: flex;
+                // background: red;
+                position: relative;
+
+                .img1 {
+
+                    position: absolute;
+                    width: 80%;
+                    
+                    // background: url(../IMG/Frame/img3.jpg);
+
+                    // // background: greenyellow;
+
+                    // background-size: contain;
+                    // background-position: center;
+                    // background-repeat: no-repeat;
+
+                    
+
+                    height: auto; /* Сохраняет пропорции изображения */
+                    object-fit: contain; /* Аналог background-size: contain */
+                    object-position: center; /* Аналог background-position: center */
+                    
+                    
+                    top: 33%;
+                    right: 0;
+                    z-index: 2;
+
+                    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+                    
+
+
+                }
+
+                .img2 {
+                    position: absolute;
+                    top: 18%;
+                    left: 0;
+                    width: 80%;
+                    height: auto; /* Сохраняет пропорции изображения */
+                    object-fit: contain; /* Аналог background-size: contain */
+                    object-position: center; /* Аналог background-position: center */
+
+                    // background: url(../IMG/Frame/img4.jpg);
+                    // background-size: contain;
+                    // background-position: center;
+                    // background-repeat: no-repeat;
+
+                    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+
+                    z-index: 1;
+                }
+            }
+        }
+    
+        .about-right {
+            width: 50%;
+            height: 600px;
+            background: white;
+           
+            position: relative;
+
+            .right-wrap {
+                width: 100%;
+                position: absolute;
+                // display: flex;
+                // flex-direction: column;
+                // justify-content: center;
+                // align-items: flex-start;
+
+                top: 8%;
+
+                
+                
+                h5 {
+
+                    position: relative;
+                    margin-top: 50px;
+
+                    font-family: "Montserrat", sans-serif;
+                    font-optical-sizing: auto;
+                    font-weight: 600;
+                    font-style: normal;
+
+                    // color: gold;
+                    color: black;
+
+                }
+
+                h5:after {
+                    content: ''; /* Обязательно для создания псевдоэлемента */
+                    position: absolute;
+                    top: 50%; /* Устанавливаем начало линии по вертикали */
+                    right: 0; /* Устанавливаем позицию линии относительно центра */
+
+                    width: 87%; /* Ширина линии */
+                    height: 1px; /* Длина линии */
+                    background-color: rgb(255, 230, 0); /* Цвет линии */
+
+                }
+                
+                
+                
+                h1 {
+                    margin-top: 50px;
+                    border: none;
+                    line-height: 80%;
+    
+                    font-family: "Montserrat", sans-serif;
+                    font-optical-sizing: auto;
+                    font-weight: 600;
+                    font-style: normal;
+                    font-size: xxx-large;
+
+                    // color: black;
+
+                    background: linear-gradient(45deg, #0b0357, #01f7ff); /* Градиент */
+                    -webkit-background-clip: text; /* Применение фона к тексту */
+                    -webkit-text-fill-color: transparent; 
+                }
+                
+                
+                
+                p {
+                    margin-top: 50px;
+
+                    font-family: "Roboto Flex", sans-serif;
+                    font-optical-sizing: auto;
+                    font-weight: 200;
+                    font-style: normal;
+                    font-variation-settings:
+                        "slnt" 0,
+                        "wdth" 100,
+                        "GRAD" 0,
+                        "XOPQ" 96,
+                        "XTRA" 468,
+                        "YOPQ" 79,
+                        "YTAS" 750,
+                        "YTDE" -203,
+                        "YTFI" 738,
+                        "YTLC" 514,
+                        "YTUC" 712;
+
+                    text-align: justify;
+
+                    color: grey;
+                }
+                
+                
+            }
+        }
+
+    }
+    
+}
+
+#gallery-general {
+    width: 100%;
+    height: auto;
+    // background: rosybrown;
+    display: flex;
+    justify-content: center;
+
+    .content-container {
+        // background: grey;
+
+        display: flex;
+
+
+        .left-block {
+            width: 100%;
+            // background: rgb(60, 255, 0);
+            position: relative;
+            overflow: hidden;
+
+            h1 {
+                position: absolute;
+                top: 50%;
+                left: 0;
+                transform: translate(-50%) rotate(-90deg);
+                transform-origin: top;
+                margin: 0;
+                white-space: nowrap; /* Убираем переносы текста */
+                font-size: 24px; /* Размер текста */
+                line-height: 74.1%;
+
+                font-family: "Montserrat", sans-serif;
+                font-optical-sizing: auto;
+                font-weight: 600;
+                font-style: normal;
+                font-size: xxx-large;
+
+                background: linear-gradient(45deg, #0b0357, #01f7ff); /* Градиент */
+                -webkit-background-clip: text; /* Применение фона к тексту */
+                -webkit-text-fill-color: transparent; 
+            }
+
+            h1:before {
+                content: ''; /* Обязательно для создания псевдоэлемента */
+                position: absolute;
+                top: 50%; /* Устанавливаем начало линии по вертикали */
+                // right: calc(h1); /* Устанавливаем позицию линии относительно центра */
+                
+                width: 107%; /* Ширина линии */
+                height: 1px; /* Длина линии */
+                background-color: rgb(255, 230, 0); /* Цвет линии */
+                left: -250px;
+                
+            }
+
+            h1:after {
+                content: ''; /* Обязательно для создания псевдоэлемента */
+                position: absolute;
+                top: 50%; /* Устанавливаем начало линии по вертикали */
+                // right: calc(h1); /* Устанавливаем позицию линии относительно центра */
+
+                width: 100%; /* Ширина линии */
+                height: 1px; /* Длина линии */
+                background-color: rgb(255, 230, 0); /* Цвет линии */
+                
+            }
+            
+        }
+
+
+        section.gallery{
+
+            position: relative;
+            // padding: 45px 0;
+        }
+          h2.title{
+            font-size: 44px;
+            font-weight: bold;
+            text-align: center;
+            padding-bottom: 45px;
+            position: relative;
+        }
+          h2.title:after{
+            content: "";
+            position: absolute;
+            width: 100px;
+            height: 3px;
+            background-color: #111111;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+          .gallery-list{
+            position: relative;
+            display: flex;
+            flex-wrap: wrap;
+            overflow: hidden;
+            font-size: 0;
+            // margin-top: 30px;
+        }
+          .gallery-item{
+            display: block;
+            flex: 25%;
+            overflow: hidden;
+            position: relative;
+        }
+          .gallery-item-hover{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0,0,0,.5);
+            color: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 16px;
+            opacity: 1;
+            transition: opacity .5s ease;
+            z-index: 2;
+        }
+          .gallery-item:hover .gallery-item-hover{
+            opacity: 0;
+        }
+          .gallery-item:hover img{
+            // transform: scale(1.3) rotate(5deg);
+            transform: scale(1.3);
+        }
+          .gallery-item img{
+            max-width: 100%;
+            height: auto;
+            transition: all .5s ease;
+        }
+          @media (max-width: 991px){
+            .gallery-item{
+              flex: 33.3%;
+            }
+        }
+          @media (max-width: 768px){
+            .gallery-item{
+              flex: 50%;
+            }
+        }
+          @media (max-width: 530px){
+            .gallery-item{
+              flex: 100%;
+            }
+        }
+    }
+
+    
+}
+
+#footer {
+    width: 100%;
+    margin-top: 10%;
+    background: rgb(43, 40, 40);
+    // background: rgb(16, 16, 66);
+    .container {
+        width: 1200px;
+        height: 50vh;
+        background: gainsboro;
+        margin: 0 auto;
+
+        display: flex;
+
+        .left-side {
+
+            width: 33.33%;
+            height: 100%;
+            background: rgb(43, 40, 40);
+
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+            line-height: 2;
+
+            .name {
+
+                h2 {
+                    color: white;
+
+                    font-family: "Montserrat", sans-serif;
+                    font-optical-sizing: auto;
+                    font-weight: 600;
+                    font-style: normal;
+                    font-size: x-large;
+                }
+            }
+
+            .slogan {
+
+                h4 {
+                    color: gold;
+
+                    font-family: "Montserrat", sans-serif;
+                    font-optical-sizing: auto;
+                    font-weight: 600;
+                    font-style: normal;
+                    font-size: large;
+                }
+            }
+
+        }
+
+        .middle-side {
+
+            width: 33.35%;
+            height: 100%;
+            background: rgb(43, 40, 40);
+
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            position: relative;
+
+            .middle-logo {
+                position: absolute;
+                width: 150px;
+                height: auto;
+
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+
+
+                img {
+                    object-fit: cover;
+                    width: 100%;
+                }
+            }
+
+        }
+
+        .right-side {
+
+            width: 33.33%;
+            height: 100%;
+            background: rgb(43, 40, 40);
+
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            justify-content: center;
+            line-height: 2;
+
+            .address-title {
+
+                h2 {
+                    font-size: 20px;
+                    color: white;
+                    font-family: "Montserrat", sans-serif;
+                    font-optical-sizing: auto;
+                    font-weight: 600;
+                    font-style: normal;
+                    font-size: large;
+                }
+
+            }
+
+            .address {
+
+                p {
+                    color: white;
+
+                    font-family: "Roboto Flex", sans-serif;
+                    font-optical-sizing: auto;
+                    font-weight: 200;
+                    font-style: normal;
+                    font-variation-settings:
+                        "slnt" 0,
+                        "wdth" 100,
+                        "GRAD" 0,
+                        "XOPQ" 96,
+                        "XTRA" 468,
+                        "YOPQ" 79,
+                        "YTAS" 750,
+                        "YTDE" -203,
+                        "YTFI" 738,
+                        "YTLC" 514,
+                        "YTUC" 712;
+                }
+
+            }
+
+            .contacts {
+
+                margin-top: 20px;
+
+
+                h2 {
+                    font-size: 20px;
+                    color: white;
+
+                    font-family: "Montserrat", sans-serif;
+                    font-optical-sizing: auto;
+                    font-weight: 600;
+                    font-style: normal;
+                    font-size: large;
+                }
+
+            }
+
+            .phone-block {
+
+                display: flex;
+
+
+                .img-block {
+
+
+                    img {
+                        width: 25px;
+                        margin-left: 5px;
+                    }
+                }
+
+                .phone {
+
+                    margin-left: 15px;
+
+                    p {
+                        color: white;
+
+                        font-family: "Roboto Flex", sans-serif;
+                        font-optical-sizing: auto;
+                        font-weight: 200;
+                        font-style: normal;
+                        font-variation-settings:
+                        "slnt" 0,
+                        "wdth" 100,
+                        "GRAD" 0,
+                        "XOPQ" 96,
+                        "XTRA" 468,
+                        "YOPQ" 79,
+                        "YTAS" 750,
+                        "YTDE" -203,
+                        "YTFI" 738,
+                        "YTLC" 514,
+                        "YTUC" 712;
+                    }
+
+                }
+
+                
+            }
+
+            .email {
+
+                
+
+                p {
+                    color: white;
+
+                    font-family: "Roboto Flex", sans-serif;
+                    font-optical-sizing: auto;
+                    font-weight: 200;
+                    font-style: normal;
+                    font-variation-settings:
+                        "slnt" 0,
+                        "wdth" 100,
+                        "GRAD" 0,
+                        "XOPQ" 96,
+                        "XTRA" 468,
+                        "YOPQ" 79,
+                        "YTAS" 750,
+                        "YTDE" -203,
+                        "YTFI" 738,
+                        "YTLC" 514,
+                        "YTUC" 712;
+                    
+
+                    img {
+                        width: 25px;
+                        vertical-align: middle;
+                        margin-right: 15px;
+                    }
+                }
+            }
+
+            
+        }
+    }
+}
